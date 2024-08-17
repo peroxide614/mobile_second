@@ -1,0 +1,28 @@
+.full-page {
+  height: 100vh;
+  max-width: 500px;
+  background-image: url('/src/image/background_img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex; /* Add this */
+  justify-content: center; /* Add this */
+  align-items: center; /* Add this */
+
+  .main-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff234;
+    margin: 25px 10px;
+    border-radius: 16px;
+    width: calc(100%- 20px);
+    height: auto;
+
+    .microsel-logo {
+      width: 160px;
+      height: 50px;
+    }
+  }
+}
