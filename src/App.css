@@ -1,63 +1,122 @@
 .full-page {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
   height: 100vh;
-  max-width: 500px;
+  width: 100vw;
+  padding: 40px 25px;
   background-image: url('/src/image/background_img.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex; /* Add this */
-  justify-content: center; /* Add this */
-  align-items: center; /* Add this */
 
   .main-element {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: #fff234; */
-    margin: 25px 10px;
+    background-color: #f7f6f1;
     border-radius: 16px;
-    width: calc(100%- 20px);
+    padding: 25px 20px;
+    width: 100%;
     height: auto;
+
+    border: 1px solid #e8ebf1;
+    box-shadow: 0px 16px 48px 0px #e3ebfb;
+    /* backdrop-filter: blur(50px); */
 
     .microsel-logo {
       width: 160px;
       height: 50px;
     }
   }
-
-  .receipt-element {
-    background-color: #dfecf8;
-    border-radius: 10px;
+  .receipt-wrapper {
+    padding: 0 40px;
     width: 100%;
-    height: auto;
-    padding: 15px 30px;
 
-    .receipt-title {
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 10px;
+    .second-container {
+      width: 100%;
+      height: 60px;
+      background-color: #dfecf8;
+      position: relative;
+      /* border-radius: 50px; */
+      overflow: hidden;
+
+      .dashed-line {
+        width: 100%;
+        height: 2px;
+        background-image: linear-gradient(90deg, transparent 50%, #5f6e8c 50%);
+        background-size: 20px 2px;
+        position: absolute;
+        top: 50%;
+        left: 26px;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        width: 60px;
+        height: 60px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+      }
+
+      &::before {
+        left: -30px;
+      }
+
+      &::after {
+        right: -30px;
+      }
     }
 
-    .receipt-info {
-      background-color: #ddebf4;
-      padding: 10px;
+    .third {
+      width: 100%;
+      height: 100px;
+      background-color: #dfecf8;
+    }
 
-      .receipt-line-info {
-        display: flex;
-        justify-content: space-between;
-        padding: 5px 0;
-        font-size: 16px;
+    .receipt-element {
+      display: flex;
+      flex-direction: column;
+      background-color: #dfecf8;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 100%;
+      height: auto;
+      padding: 15px 30px 0;
 
-        .receipt-line-text {
-          font-size: 14px;
-          color: #7c87aa;
-        }
+      .receipt-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
 
-        .receipt-line-output {
+      .receipt-info {
+        background-color: #cfdfe9;
+        border-radius: 10px;
+        padding: 10px;
+
+        .receipt-line-info {
           display: flex;
-          justify-content: flex-end;
-          color: #253058;
+          justify-content: space-between;
+          padding: 5px 0;
+          font-size: 16px;
+
+          .receipt-line-text {
+            width: 150px;
+            font-size: 14px;
+            color: #7c87aa;
+          }
+
+          .receipt-line-output {
+            display: flex;
+            justify-content: flex-end;
+            color: #253058;
+          }
         }
       }
     }
