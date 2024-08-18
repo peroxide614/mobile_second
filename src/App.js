@@ -47,6 +47,12 @@ function App() {
             </div>
           </div>
         </div>
+        <div className="data-page">
+          <div className="icon-w-title">
+            <img></img>
+            <div>Ödeme</div>
+          </div>
+        </div>
       </div>
     </div>
   );

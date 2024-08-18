@@ -26,6 +26,12 @@
     box-shadow: 0px 16px 48px 0px #e3ebfb;
     /* backdrop-filter: blur(50px); */
 
+    .data-page {
+      .icon-w-title {
+        display: flex;
+      }
+    }
+
     .microsel-logo {
       width: 160px;
       height: 50px;
