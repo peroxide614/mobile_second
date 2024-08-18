@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import logo from './image/microsel_logo.png';
+import firsticon from './image/first_icon.png';
 
 function App() {
   return (
@@ -37,9 +38,13 @@ function App() {
             <div className="dashed-line"></div>
           </div>
           <div className="third">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div className="third-wrapper">
+              <div className="third-title">Ödenecek Tutar</div>
+              <div className="third-price">$ 576,32</div>
+            </div>
+            <div className="third-icon">
+              <img src={firsticon}></img>
+            </div>
           </div>
         </div>
       </div>

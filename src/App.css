@@ -58,7 +58,7 @@
         content: '';
         width: 60px;
         height: 60px;
-        background-color: #ffffff;
+        background-color: #f7f6f1;
         border-radius: 50%;
         position: absolute;
         top: 0;
@@ -74,9 +74,51 @@
     }
 
     .third {
+      display: flex;
       width: 100%;
-      height: 100px;
+      height: 90px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
       background-color: #dfecf8;
+
+      .third-wrapper {
+        flex-direction: row;
+        padding: 15px 30px;
+
+        .third-title {
+          color: #7c87aa;
+
+          font-family: 'Euclid Circular B';
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        .third-price {
+          color: #253058;
+          margin-top: 5px;
+          font-family: 'Euclid Circular B';
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+
+      .third-icon {
+        padding-top: 15px;
+        margin-left: 30px;
+        width: 38px;
+        height: 51px;
+      }
+
+      .third-icon img {
+        width: 38px;
+        height: 51px;
+        object-fit: contain;
+      }
     }
 
     .receipt-element {
