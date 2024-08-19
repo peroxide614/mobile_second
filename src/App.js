@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import logo from './image/microsel_logo.png';
 import firsticon from './image/first_icon.png';
+import secondicon from './image/second_icon.png';
 
 function App() {
   return (
@@ -49,8 +50,13 @@ function App() {
         </div>
         <div className="data-page">
           <div className="icon-w-title">
-            <img></img>
-            <div>Ödeme</div>
+            <div className="data-wrapper">
+              <img src={secondicon} className="data-icon"></img>
+              <div className="data-text">Ödeme</div>
+            </div>
+            <div className="data-big-text">
+              Ödemenin gerçekleşmesi için lütfen bilgileri eksiksiz giriniz.
+            </div>
           </div>
         </div>
       </div>
