@@ -11,6 +11,28 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  .text-with-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    .text-with-icon-text {
+      /* margin-top: 30px; */
+      color: #253058;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .info-icon {
+      width: 16px;
+      height: 16px;
+      /* margin-top: 36px; */
+    }
+  }
+
   .main-element {
     display: flex;
     flex-direction: column;
@@ -27,7 +49,7 @@
     /* backdrop-filter: blur(50px); */
 
     .data-page {
-      .icon-w-title {
+      .icon-with-title {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
@@ -51,8 +73,51 @@
           }
         }
 
+        .info-input-form {
+          margin-top: 5px;
+          margin-bottom: 20px;
+          width: 100%;
+          height: 48px;
+          border-radius: 8px;
+          border: 1px solid #e8ebf1;
+          background: #eaecf0;
+        }
+
+        .orange-input-form {
+          display: flex;
+          padding: 15px 24px;
+          justify-content: center;
+          align-items: center;
+          margin-top: 5px;
+          margin-bottom: 20px;
+          border-radius: 8px;
+          border: 1px solid #ef6824;
+          background: #fdeee6;
+        }
+
+        .smallest-form {
+          margin-top: 5px;
+          margin-bottom: 20px;
+          height: 48px;
+          width: 30%;
+          border-radius: 8px;
+          border: 1px solid #e8ebf1;
+          background: #f8f9fb;
+        }
+
+        .medium-form {
+          margin-top: 5px;
+          margin-bottom: 20px;
+          height: 48px;
+          width: 60%;
+          border-radius: 8px;
+          border: 1px solid #e8ebf1;
+          background: #f8f9fb;
+        }
+
         .data-big-text {
           margin-top: 10px;
+          margin-bottom: 30px;
           color: #7c87aa;
           font-size: 16px;
           font-style: normal;

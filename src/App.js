@@ -3,6 +3,7 @@ import './App.css';
 import logo from './image/microsel_logo.png';
 import firsticon from './image/first_icon.png';
 import secondicon from './image/second_icon.png';
+import thirdicon from './image/third_icon.png';
 
 function App() {
   return (
@@ -49,13 +50,39 @@ function App() {
           </div>
         </div>
         <div className="data-page">
-          <div className="icon-w-title">
+          <div className="icon-with-title">
             <div className="data-wrapper">
               <img src={secondicon} className="data-icon"></img>
               <div className="data-text">Ödeme</div>
             </div>
             <div className="data-big-text">
               Ödemenin gerçekleşmesi için lütfen bilgileri eksiksiz giriniz.
+            </div>
+            <div className="text-with-icon">
+              <div className="text-with-icon-text">İsim Soyisim</div>
+              <img className="info-icon" src={thirdicon}></img>
+            </div>
+            <input className="info-input-form"></input>
+            <div className="text-with-icon">
+              <div className="text-with-icon-text">Kart Numarası</div>
+              <img className="info-icon" src={thirdicon}></img>
+            </div>
+            <input className="orange-input-form"></input>
+            <div className="cvv-and-expiration">
+              <div className="cvv">
+                <div className="text-with-icon">
+                  <div className="text-with-icon-text">CCV</div>
+                  <img className="info-icon" src={thirdicon}></img>
+                </div>
+                <input className="smallest-form"></input>
+              </div>
+              <div className="expiration">
+                <div className="text-with-icon">
+                  <div className="text-with-icon-text">Son Kullanım Tarihi</div>
+                  <img className="info-icon" src={thirdicon}></img>
+                </div>
+                <input className="medium-form"></input>
+              </div>
             </div>
           </div>
         </div>
