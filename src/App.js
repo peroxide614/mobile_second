@@ -84,6 +84,9 @@ function App() {
                 <input className="medium-form"></input>
               </div>
             </div>
+            <div className="bottom-button">
+              <button className="orange-button">Ödemeyi Tamamla</button>
+            </div>
           </div>
         </div>
       </div>
