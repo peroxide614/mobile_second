@@ -71,6 +71,10 @@
         width: 432px;
       }
 
+      /* .blank {
+
+      } */
+
       .icon-with-title {
         display: flex;
         flex-direction: column;
