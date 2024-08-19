@@ -10,6 +10,11 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  @media (min-width: 1200px) {
+    background-color: blueviolet;
+    background-image: none;
+  }
+
   .text-with-icon {
     display: flex;
     flex-direction: row;
@@ -40,11 +45,32 @@
     padding: 25px 20px 80px;
     width: 100%;
     height: auto;
-
     border: 1px solid #e8ebf1;
     box-shadow: 0px 16px 48px 0px #e3ebfb;
 
+    @media (min-width: 1200px) {
+      align-items: start;
+      padding: 24px 123px 128px;
+    }
+
+    .global-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: 1200px) {
+        flex-direction: row;
+      }
+    }
+
     .data-page {
+      order: 2;
+
+      @media (min-width: 1200px) {
+        order: 1;
+        margin-right: 300px;
+        width: 432px;
+      }
+
       .icon-with-title {
         display: flex;
         flex-direction: column;
@@ -155,7 +181,14 @@
     }
   }
   .receipt-wrapper {
+    order: 1;
     width: 100%;
+
+    @media (min-width: 1200px) {
+      order: 2;
+      width: 400px;
+      /* background-color: blue; */
+    }
 
     .second-container {
       width: 100%;
@@ -203,8 +236,11 @@
       height: 90px;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
-
       background-color: #dfecf8;
+
+      @media (min-width: 1200px) {
+        height: 125px;
+      }
 
       .third-wrapper {
         display: flex;
@@ -252,6 +288,10 @@
       width: 100%;
       height: auto;
       padding: 15px 30px 0;
+
+      @media (min-width: 1200px) {
+        height: 300px;
+      }
 
       .receipt-title {
         font-size: 20px;
